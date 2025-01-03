@@ -1,0 +1,134 @@
+.mineContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #192b3b;
+  padding:15px;
+}
+
+.mineBox {
+  width: 70%;
+  height: 100%;
+  padding: 0px;
+  background: #192b3b;
+  display: grid;
+  border:none;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.mines {
+  background: rgb(49, 69, 85);
+  margin: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.mines:not(:is(.clicked,.non-clicked)):hover {
+  transform: scale(1.05);
+  background: rgba(49, 69, 85);
+  box-shadow: inset 0px 0px 0px 50px rgb(255,255,255,0.2);
+}
+
+.image{
+  opacity:0;
+  width:20px;
+}
+
+.mines.clicked {
+  animation: reveal 0.8s linear;
+  background: #0e1d29;
+  transition: background;
+  transition-delay: 0.8s;
+}
+
+.mines.non-clicked{
+  background: #0e1d29;
+  transition: background,opacity;
+  transition-delay: 0.85s;
+  opacity:0.3;
+}
+
+.clicked-diamondImage{
+  width:85%;
+  height:85%;
+  padding-left: 7px;
+  padding-top:5px;
+  opacity:1;
+  transition: opacity;
+  transition-delay: 0.8s;
+}
+
+.clicked-mineImage{
+  width: 80%;
+  padding-left:9px;
+  padding-top: 8px;
+  opacity:1;
+  transition: opacity;
+  transition-delay: 0.8s;
+}
+
+.diamondImage{
+  width:65%;
+  height:65%;
+  padding-left: 16px;
+  padding-top: 14px;
+  opacity:1;
+  transition: opacity;
+  transition-delay: 0.85s;
+}
+
+.mineImage{
+  width:60%;
+  padding-left:18px;
+  padding-top: 17px;
+  opacity:1;
+  transition: opacity;
+  transition-delay: 0.85s;
+}
+
+@keyframes reveal{
+  0%{
+    transform: scale(1);
+  }
+  25%{
+    transform: scale(0.95);
+  }
+  50%{
+    transform: scale(1);
+  }
+  75%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.diamondImage,.clicked-diamondImage,.mineImage,.clicked-mineImage{
+  -webkit-user-select: none;
+  user-select: none; 
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+.profitInfo,.lossInfo{
+  position: absolute;
+  width:150px;
+  height:auto;
+  padding:15px 10px;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color:white;
+  background: rgba(29, 28, 28, 0.85);
+  border-radius: 10px;
+}
+
+.profitInfo{
+  box-shadow: 0px 0px 6px 2px green;
+}
+
+.lossInfo{
+  box-shadow: 0px 0px 8px 2px red;
+}

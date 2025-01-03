@@ -1,0 +1,103 @@
+.betContainer {
+  padding:30px;
+  color:rgba(230, 230, 230);
+  background: #2d4252;
+}
+
+.amountTitle{
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.betAmount,.betMines{
+  width: 150px;
+  font-size: 16px;
+  padding:8px 0px 8px 6px;
+  color:white;
+  background: #0e1d29;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.betAmount:disabled{
+  cursor:not-allowed;
+}
+
+.setBet{
+  width:30px;
+  height:30px;
+  color:rgb(255, 255, 255);
+  background :transparent;
+  font-size:14px;
+  font-weight: 700;
+  padding:0;
+  border: none;
+  outline:none;
+  cursor:pointer;
+}
+
+.betMines{
+  width:215px;
+  cursor: pointer;
+}
+
+.minesInfo{
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.minesNumber{
+  width: 210px;
+  font-size: 16px;
+  padding:8px 0px 8px 6px;
+  color:white;
+  background: #0e1d29;
+}
+
+.selectMines{
+  color:black;
+  background-color: white;
+}
+
+.error{
+  font-size: 14px;
+  padding-top:5px;
+  color:rgb(255, 0, 0);
+  font-family: 'Calibri';
+}
+
+.betButton,.cashoutButton{
+  width: 215px;
+  margin-top: 12px;
+  padding: 6px 4px;
+  color: rgb(240, 240, 240);
+  background: rgb(10, 165, 10);
+  font-family: 'Calibri';
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.betButton:active,.cashoutButton:active {
+  transform: scale(0.96);
+}
+
+.betButton:hover,.cashoutButton:hover {
+  background: rgb(10, 145, 10);
+}
+
+.betButton:disabled,.cashoutButton:disabled {
+  background: rgb(10, 120, 10);
+  cursor: not-allowed;
+  transform: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

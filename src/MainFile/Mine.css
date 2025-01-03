@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(40, 56, 70);
+}
+
+.container{
+  width:75%;
+  margin:0 auto;
+}
+
+.gameTitle {
+  width:65%;
+  display: inline-block;
+  color: white;
+  background: rgb(40,56,70);
+  font-size: 48px;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  padding-left: 17.5%;
+}
+
+.totalAmount{
+  display:inline-block;
+  color:white;
+  font-size: 20px;
+  padding: 10px;
+  margin:10px 10px 0;
+}
+
+.gameContainer {
+  width: 100%;
+  height: 530px;
+  display: grid;
+  grid-template-columns: 27% 73%;
+  box-sizing: border-box;
+}
