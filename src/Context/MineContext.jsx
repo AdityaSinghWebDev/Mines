@@ -1,5 +1,5 @@
 import React,{ createContext, useContext, useState } from "react";
-import cashoutSound from '../Audio/Cashout.mp3';
+import cashoutSound from '../Audio/cashout.mp3';
 
 export let MineContext=createContext();
 
