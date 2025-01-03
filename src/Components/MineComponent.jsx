@@ -1,6 +1,6 @@
 import React from 'react';
-import bomb from '../images/red_bomb.png';
-import diamond from '../images/green_diamond.png';
+import bomb from '../Images/red_bomb.png';
+import diamond from '../Images/green_diamond.png';
 import mineSound from '../Audio/mine.mp3';
 import tingSound from '../Audio/ting.mp3';
 import { useMine } from '../Context/MineContext';
